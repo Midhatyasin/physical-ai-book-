@@ -1,0 +1,32 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--ifocus-background);
+  border: 1px solid var(--ifocus-border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--ifocus-content);
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: var(--ifocus-hover);
+  border-color: var(--ifocus-primary);
+}
+
+.translated {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.text {
+  font-weight: 500;
+}

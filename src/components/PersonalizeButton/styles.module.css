@@ -1,0 +1,109 @@
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trigger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.arrow {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--ifocus-background);
+  border: 1px solid var(--ifocus-border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdownHeader {
+  padding: 0.75rem 1rem;
+  background: var(--ifocus-secondary);
+  font-size: 0.8rem;
+  color: var(--ifocus-secondary-content);
+  border-bottom: 1px solid var(--ifocus-border-color);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.option:hover {
+  background: var(--ifocus-hover);
+}
+
+.selected {
+  background: var(--ifocus-highlight);
+}
+
+.profileIcon {
+  font-size: 1.5rem;
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileLabel {
+  font-weight: 600;
+  color: var(--ifocus-content);
+}
+
+.profileDesc {
+  font-size: 0.75rem;
+  color: var(--ifocus-secondary-content);
+}
+
+.check {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.recommendations {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--ifocus-secondary-content);
+  background: var(--ifocus-secondary);
+  border-radius: 4px;
+}

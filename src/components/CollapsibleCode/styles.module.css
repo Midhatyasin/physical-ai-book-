@@ -1,0 +1,128 @@
+.container {
+  margin: 1rem 0;
+  border: 1px solid var(--ifocus-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ifocus-code-bg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--ifocus-secondary);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.header:hover {
+  background: var(--ifocus-hover);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--ifocus-content);
+}
+
+.langBadge {
+  padding: 0.2rem 0.5rem;
+  background: var(--ifocus-primary);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.toggleIcon {
+  color: var(--ifocus-secondary-content);
+  font-size: 0.8rem;
+}
+
+.content {
+  padding: 0;
+}
+
+.codeContainer {
+  position: relative;
+  overflow-x: auto;
+}
+
+.code {
+  display: flex;
+  margin: 0;
+  padding: 1rem;
+  background: transparent;
+  font-family: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.lineNumbers {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  border-right: 1px solid var(--ifocus-border-color);
+  margin-right: 1rem;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.lineNumber {
+  text-align: right;
+  min-width: 2rem;
+}
+
+.copyButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--ifocus-background);
+  border: 1px solid var(--ifocus-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.codeContainer:hover .copyButton {
+  opacity: 1;
+}
+
+.collapsedPreview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--ifocus-code-bg);
+  color: var(--ifocus-secondary-content);
+  font-family: 'Fira Code', 'Monaco', monospace;
+  font-size: 0.8rem;
+}
+
+.collapsedPreview code {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expandHint {
+  font-size: 0.75rem;
+  color: var(--ifocus-primary);
+}
