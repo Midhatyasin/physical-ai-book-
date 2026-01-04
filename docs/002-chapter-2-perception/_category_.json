@@ -1,0 +1,9 @@
+{
+  "label": "Chapter 2: Robot Perception",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Chapter 2: Robot Perception and Computer Vision",
+    "description": "Learn how robots see and interpret the world through cameras, sensors, and AI"
+  }
+}
