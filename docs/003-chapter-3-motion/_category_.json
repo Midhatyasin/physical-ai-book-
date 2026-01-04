@@ -1,0 +1,9 @@
+{
+  "label": "Chapter 3: Robot Motion",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Chapter 3: Robot Motion and Control",
+    "description": "Learn kinematics, dynamics, PID control, and trajectory planning"
+  }
+}
