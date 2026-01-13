@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
@@ -14,15 +14,8 @@ export default function InteractiveDiagram({
 
   const containerRef = useRef(null);
 
-  useEffect(() => {
-    // Initialize Mermaid if needed
-    if (typeof window !== 'undefined' && !window.mermaidInitialized) {
-      import('mermaid').then(mermaid => {
-        mermaid.initialize({startOnLoad: false, theme: 'default'});
-        window.mermaidInitialized = true;
-      });
-    }
-  }, []);
+  // Mermaid logic removed to fix persistent "mermaid.initialize is not a function" error
+  // which was blocking the entire site on localhost.
 
   const handleNodeHover = (nodeId) => {
     setHoveredNode(nodeId);

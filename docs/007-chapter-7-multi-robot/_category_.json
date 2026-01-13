@@ -1,0 +1,9 @@
+{
+  "label": "Chapter 7: Multi-Robot Systems",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Chapter 7: Multi-Robot Systems",
+    "description": "Learn multi-robot coordination, formation control, task allocation, and swarm robotics"
+  }
+}
